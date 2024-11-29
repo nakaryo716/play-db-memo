@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8.0.40-bookworm
+    ports:
+      - "3306:3306"
+    env_file:
+      - ./env/mysql_config
+    volumes:
+      - scala_volume:/var/lib/mysql
+    environment:
+      POSTGRES_USER: 'playdbuser'
+      POSTGRES_PASSWORD: 'mysqlpassword'
+      POSTGRES_DATABASE: 'playdb'
+volumes:
+    scala_volume:

@@ -1,0 +1,6 @@
+MYSQL_ROOT_PASSWORD = mysqlpassword
+MYSQL_ALLOW_EMPTY_PASSWORD = false
+MYSQL_RANDOM_ROOT_PASSWORD = false
+MYSQL_USER = playdbuser
+MYSQL_PASSWORD = mysqlpassword
+MYSQL_DATABASE = playdb
